@@ -1,0 +1,234 @@
+/* Dark Background */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 20px;
+}
+
+/* Modal Box */
+.apply-modal {
+    background: #ffffff;
+    width: 900px;
+    max-width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 18px;
+    padding: 35px;
+    position: relative;
+    animation: popup .35s ease;
+    box-shadow: 0 15px 45px rgba(0,0,0,.25);
+}
+
+/* Scrollbar */
+.apply-modal::-webkit-scrollbar {
+    width: 8px;
+}
+
+.apply-modal::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 20px;
+}
+
+/* Popup Animation */
+@keyframes popup {
+    from {
+        transform: translateY(30px) scale(.95);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: #f1f5f9;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    transition: .3s;
+}
+
+.close-btn:hover {
+    background: #ef4444;
+    color: white;
+}
+
+/* Header */
+.modal-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.modal-header h2 {
+    color: #0f172a;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.modal-header p {
+    color: #64748b;
+    font-size: 15px;
+}
+
+/* Grid */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+/* Form Group */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #334155;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+/* Inputs */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    transition: .3s;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37,99,235,.15);
+}
+
+/* Cover Letter */
+.full-width {
+    margin-top: 20px;
+}
+
+.full-width textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+/* Upload */
+.upload-section {
+    margin-top: 25px;
+}
+
+.upload-box {
+    display: block;
+    border: 2px dashed #3b82f6;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+    color: #2563eb;
+    font-weight: 600;
+    background: #eff6ff;
+}
+
+.upload-box:hover {
+    background: #dbeafe;
+}
+
+.upload-box input {
+    display: block;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.file-name {
+    margin-top: 10px;
+    color: #16a34a;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Buttons */
+.modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.cancel-btn,
+.submit-btn {
+    padding: 13px 28px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.cancel-btn {
+    background: #e2e8f0;
+    color: #1e293b;
+}
+
+.cancel-btn:hover {
+    background: #cbd5e1;
+}
+
+.submit-btn {
+    background: #2563eb;
+    color: white;
+}
+
+.submit-btn:hover {
+    background: #1d4ed8;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    .apply-modal{
+        width:100%;
+        padding:25px;
+    }
+
+    .form-grid{
+        grid-template-columns:1fr;
+    }
+
+    .modal-buttons{
+        flex-direction:column;
+    }
+
+    .cancel-btn,
+    .submit-btn{
+        width:100%;
+    }
+
+    .modal-header h2{
+        font-size:24px;
+    }
+
+}

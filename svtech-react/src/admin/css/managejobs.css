@@ -1,0 +1,117 @@
+.manage-jobs {
+    margin-left: 260px;
+    padding: 30px;
+    background: #f4f7fc;
+    min-height: 100vh;
+}
+
+.manage-jobs h1 {
+    margin-bottom: 30px;
+}
+
+.job-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1.3fr;
+    gap: 20px;
+    align-items: center;
+}
+.manage-jobs h2 {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 38px;
+}
+
+.job-form input,
+.job-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.job-form textarea {
+    height: 48px;
+    resize: none;
+}.job-form textarea {
+    height: 55px;
+    resize: none;
+}
+
+.job-form button {
+    grid-column: 1 / 5;
+    width: 180px;
+    height: 50px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.job-form button:hover {
+    background: #1d4ed8;
+}
+
+.jobs-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+
+.jobs-table th {
+    background: #2563eb;
+    color: white;
+    padding: 16px;
+}
+
+.jobs-table td {
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.jobs-table tr:hover {
+    background: #f8f9ff;
+}
+
+.jobs-table th,
+.jobs-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.jobs-table th {
+    background: #2563eb;
+    color: white;
+}
+.edit-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.edit-btn:hover {
+  background: #218838;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}

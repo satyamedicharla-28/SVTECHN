@@ -1,0 +1,148 @@
+/* ===========================
+   Applicants Page
+=========================== */
+
+.dashboard-content{
+    margin-left:260px;
+    padding:30px;
+    background:#f4f7fc;
+    min-height:100vh;
+}
+
+.dashboard-content h1{
+    font-size:48px;
+    color:#000;
+    margin-bottom:25px;
+    font-weight:700;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.table-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+/* ===========================
+   Download Button
+=========================== */
+
+.download-btn{
+    background:#16a34a;
+    color:#fff;
+    border:none;
+    padding:12px 24px;
+    border-radius:8px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.download-btn:hover{
+    background:#15803d;
+}
+
+/* ===========================
+   Table
+=========================== */
+
+.applicant-table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.applicant-table thead{
+    background:#2f64e2;
+}
+
+.applicant-table thead th{
+    color:#fff;
+    padding:18px;
+    text-align:center;
+    font-size:20px;
+    font-weight:600;
+}
+
+.applicant-table tbody td{
+    padding:18px;
+    text-align:center;
+    border-bottom:1px solid #e5e5e5;
+    font-size:17px;
+    color:#333;
+}
+
+.applicant-table tbody tr:hover{
+    background:#f7faff;
+}
+
+/* ===========================
+   Resume
+=========================== */
+
+.resume-link{
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.resume-link:hover{
+    text-decoration:underline;
+}
+
+.no-resume{
+    color:red;
+    font-weight:600;
+}
+
+/* ===========================
+   Delete Button
+=========================== */
+
+.delete-btn{
+    background:#ef4444;
+    color:#fff;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.delete-btn:hover{
+    background:#dc2626;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:1200px){
+
+    .dashboard-content{
+        margin-left:0;
+        padding:20px;
+    }
+
+    .table-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+    }
+
+    .applicant-table{
+        display:block;
+        overflow-x:auto;
+        white-space:nowrap;
+    }
+}

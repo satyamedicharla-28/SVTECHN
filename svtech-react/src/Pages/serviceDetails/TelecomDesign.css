@@ -1,0 +1,282 @@
+/* ================= GLOBAL ================= */
+.telecom-page {
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+/* ================= HERO SECTION ================= */
+.hero {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.05);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 20, 60, 0.6);
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: white;
+  max-width: 600px;
+}
+
+.hero-tagline {
+  color: #ffcc00;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin: 15px 0;
+}
+
+.hero-description {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.hero-btn {
+  padding: 12px 25px;
+  background: #0056b3;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background: #003f80;
+}
+
+.slider-dots {
+  margin-top: 20px;
+}
+
+.slider-dots span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.slider-dots .active {
+  background: #fff;
+}
+
+.scroll-icon {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, 10px); }
+}
+
+/* ================= WELCOME ================= */
+.welcome-section {
+  padding: 60px 10%;
+  text-align: center;
+  background: #f8fbff;
+}
+
+.welcome-section h2 {
+  font-size: 32px;
+  color: #004c97;
+  margin-bottom: 15px;
+}
+
+.welcome-section p {
+  max-width: 900px;
+  margin: auto;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* ================= SERVICES ================= */
+.services-section {
+  padding: 80px 8%;
+  background: #ffffff;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  font-size: 38px;
+  color: #004c97;
+  margin-bottom: 10px;
+}
+
+.section-title p {
+  max-width: 750px;
+  margin: auto;
+  color: #666;
+  line-height: 1.7;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.service-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+.icon-box {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  background: #0056b3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+/* ================= SOFTWARE ================= */
+.software-section {
+  padding: 80px 8%;
+  background: #f5f9ff;
+}
+
+.software-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.software-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.software-card:hover {
+  transform: translateY(-6px);
+}
+
+.software-card h3 {
+  color: #003366;
+  margin-top: 10px;
+}
+
+/* ================= PROCESS ================= */
+.process-section {
+  padding: 80px 8%;
+  background: #fff;
+}
+
+.process-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.process-step {
+  flex: 1;
+  min-width: 180px;
+  text-align: center;
+}
+
+.step-circle {
+  width: 50px;
+  height: 50px;
+  background: #0056b3;
+  color: white;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.process-line {
+  flex: 0;
+  width: 40px;
+  height: 3px;
+  background: #0056b3;
+}
+
+/* ================= CONTENT ================= */
+.content {
+  padding: 60px 10%;
+  background: #f8fbff;
+}
+
+.content h2 {
+  color: #004c97;
+  margin-bottom: 15px;
+}
+
+/* ================= CONTACT ================= */
+.contact-box {
+  padding: 60px 10%;
+  background: #0056b3;
+  color: white;
+  text-align: center;
+}
+
+.contact-box button {
+  margin-top: 15px;
+  padding: 12px 25px;
+  border: none;
+  background: white;
+  color: #0056b3;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}

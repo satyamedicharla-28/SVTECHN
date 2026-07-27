@@ -1,0 +1,133 @@
+/* Page Layout */
+/* Layout */
+
+.admin-layout{
+    background:#f5f7fb;
+    min-height:100vh;
+}
+
+.admin-content{
+    margin-left:310px;   /* 260px sidebar + 50px spacing */
+    padding:30px;
+}
+
+/* Heading */
+.admin-content h2 {
+  margin-bottom: 25px;
+  color: #0d47a1;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* Form */
+.user-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
+
+.user-form input,
+.user-form select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+}
+
+.user-form input:focus,
+.user-form select:focus {
+  border-color: #0d47a1;
+}
+
+/* Submit Button */
+.user-form button {
+  background: #0d47a1;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.user-form button:hover {
+  background: #1565c0;
+}
+
+/* Table */
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.users-table th {
+  background: #0d47a1;
+  color: #fff;
+  padding: 14px;
+  text-align: left;
+}
+
+.users-table td {
+  padding: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.users-table tr:hover {
+  background: #f5f9ff;
+}
+
+/* Buttons */
+.edit-btn,
+.delete-btn {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.edit-btn {
+  background: #ff9800;
+}
+
+.edit-btn:hover {
+  background: #f57c00;
+}
+
+.delete-btn {
+  background: #e53935;
+}
+
+.delete-btn:hover {
+  background: #c62828;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admin-content {
+    padding: 15px;
+  }
+
+  .user-form {
+    grid-template-columns: 1fr;
+  }
+
+  .users-table {
+    display: block;
+    overflow-x: auto;
+  }
+}
