@@ -51,7 +51,7 @@ function Home() {
         }}
       >
         <div className="overlay">
-          <h1>Welcome to SVTech Networks Pvt. Ltd.</h1>
+          <h1>Welcome to SVTECH NETWORKS Pvt. Ltd.</h1>
 
           <p>
             Delivering innovative Telecom, Fiber Network Design,
